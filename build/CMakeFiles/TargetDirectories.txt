@@ -1,0 +1,3 @@
+/home/eymen/Belgeler/vscode/game of death/build/CMakeFiles/program.dir
+/home/eymen/Belgeler/vscode/game of death/build/CMakeFiles/edit_cache.dir
+/home/eymen/Belgeler/vscode/game of death/build/CMakeFiles/rebuild_cache.dir
