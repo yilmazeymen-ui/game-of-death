@@ -1,17 +1,19 @@
-// Including libraries
+/*** Including libraries ***/
 
+#include "../include/glad/glad.h"
 #include <SDL3/SDL.h>
+#include <SDL3/SDL_opengl.h>
 #include <cstdio>
 #include "classes.h"
 
-// Defining const vars
+/*** Defining const vars ***/
 
 #define SCREEN_HEIGHT 500
 #define SCREEN_WIDTH 500
 
 Transform cube; // Thats my cube, worlds best cube
 
-int main(int argc, char *argv[])    //Starting program
+int main(int argc, char *argv[]) //Starting program
 {
     // Initializing SDL video thing
     if (!SDL_Init(SDL_INIT_VIDEO)) {
@@ -19,43 +21,56 @@ int main(int argc, char *argv[])    //Starting program
         return 1;
     }
 
+    // Defining OpenGL preferences
+    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 3);
+    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 3);
+    SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_CORE);
+
+    SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
+    SDL_GL_SetAttribute(SDL_GL_DEPTH_SIZE, 24);
+
     // Creating a window
-    SDL_Window* win = SDL_CreateWindow("GAME", SCREEN_WIDTH, SCREEN_HEIGHT, 0);
+    SDL_Window* win = SDL_CreateWindow("GAME", SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_OPENGL);
     if (win == nullptr) {
         printf("\nError window: %s", SDL_GetError());
+        return 1;
     }
 
-    // Creating a renderer
-    SDL_Renderer* render = SDL_CreateRenderer(win, nullptr);
-    if (render == nullptr) {
-        printf("\nError render: %s", SDL_GetError());
+    // Creating an OpenGL Context
+    SDL_GLContext glContext = SDL_GL_CreateContext(win);
+    if (glContext == nullptr) {
+        printf("\nError OpenGL: %s", SDL_GetError());
+        return 1;
     }
 
-    // Defining vars for worlds best cube
-    cube.scale.x = 10;
-    cube.scale.y = 10;
-    cube.position.x = 0;
-    cube.position.y = 0;
+    // Starting OpenGL
+    if (!gladLoadGLLoader((GLADloadproc)SDL_GL_GetProcAddress)) {
+        printf("OpenGL loader error!\n");
+        return 1;
+    }
 
-    // Creating SDL cube with my cube
-    SDL_FRect rect;
-    rect.h = cube.scale.y;
-    rect.w = cube.scale.x;
-    rect.x = (SCREEN_HEIGHT - rect.h) / 2.0f;
-    rect.y = (SCREEN_WIDTH - rect.w) / 2.0f;
+    // VSync ON
+    SDL_GL_SetSwapInterval(1);
 
-    // Drawing an ugly background
-    SDL_SetRenderDrawColor(render, 0, 0, 0, 255);
-    SDL_RenderClear(render);
+    bool running = true;
+    SDL_Event event;
 
-    // Drawing worlds best cube
-    SDL_SetRenderDrawColor(render, 255, 0, 0, 255);
-    SDL_RenderFillRect(render, &rect);
+    // Program loop
+    while (running) {
+        // Breaking loop when user gives quit command
+        while (SDL_PollEvent(&event)) {
+            if (event.type == SDL_EVENT_QUIT) running = false;
+        }
+        
+        glClearColor(0.0f, 0.5f, 0.5f, 1.0f);                   // Cyan colored background
 
-    SDL_RenderPresent(render);  // Rendering screen (owwww look at that sweet cube baby)
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);     // I don't now what the frick is this
 
-    SDL_Delay(3000);    // Waiting 3 seconds
-    SDL_DestroyRenderer(render);    // Killing scree- wait! WHERE IS MY CUBEEEE!?!?!?
-    SDL_Quit(); // Stopping SDL thing
-    return 0;
+        SDL_GL_SwapWindow(win);                                 // Drawing window
+    }
+
+    SDL_GL_DestroyContext(glContext);   // Destroying OpenGL context
+    SDL_DestroyWindow(win);             // Killing window
+    SDL_Quit();                         // Stopping SDL thing
+    return 0;                           // Closing program
 }

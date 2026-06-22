@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/eymen/Belgeler/vscode/game of death/include/glad.c" "CMakeFiles/program.dir/include/glad.c.o" "gcc" "CMakeFiles/program.dir/include/glad.c.o.d"
   "/home/eymen/Belgeler/vscode/game of death/src/main.cpp" "CMakeFiles/program.dir/src/main.cpp.o" "gcc" "CMakeFiles/program.dir/src/main.cpp.o.d"
   "" "program" "gcc" "CMakeFiles/program.dir/link.d"
   )

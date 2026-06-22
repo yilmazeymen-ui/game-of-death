@@ -1,1 +1,1 @@
-/usr/lib/ccache/bin/c++ -Wl,--dependency-file=CMakeFiles/program.dir/link.d CMakeFiles/program.dir/src/main.cpp.o -o program  /usr/lib/libSDL3.so.0.4.10
+/usr/lib/ccache/bin/c++ -Wl,--dependency-file=CMakeFiles/program.dir/link.d CMakeFiles/program.dir/src/main.cpp.o CMakeFiles/program.dir/include/glad.c.o -o program  /usr/lib/libSDL3.so.0.4.10 -lGL

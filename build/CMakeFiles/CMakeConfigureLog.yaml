@@ -5,7 +5,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:12 (find_program)"
-      - "CMakeLists.txt:3 (project)"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_UNAME"
     description: "Path to a program."
@@ -20,6 +20,8 @@ events:
     names:
       - "uname"
     candidate_directories:
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/home/eymen/fvm/versions/stable/bin/"
       - "/home/eymen/.opencode/bin/"
       - "/usr/lib/ccache/bin/"
@@ -35,6 +37,8 @@ events:
       - "/usr/bin/core_perl/"
       - "/bin/"
     searched_directories:
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/uname"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/uname"
       - "/home/eymen/fvm/versions/stable/bin/uname"
       - "/home/eymen/.opencode/bin/uname"
       - "/usr/lib/ccache/bin/uname"
@@ -45,11 +49,15 @@ events:
     found: "/usr/bin/uname"
     search_context:
       ENV{PATH}:
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/home/eymen/fvm/versions/stable/bin"
         - "/home/eymen/.opencode/bin"
         - "/usr/lib/ccache/bin/"
         - "/home/eymen/.cargo/bin/"
         - "/home/eymen/.local/bin/"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -65,14 +73,14 @@ events:
     kind: "message-v1"
     backtrace:
       - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:212 (message)"
-      - "CMakeLists.txt:3 (project)"
+      - "CMakeLists.txt:4 (project)"
     message: |
       The system is: Linux - 7.0.12-1-cachyos - x86_64
   -
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/CMakeUnixFindMake.cmake:5 (find_program)"
-      - "CMakeLists.txt:3 (project)"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_MAKE_PROGRAM"
     description: "Path to a program."
@@ -89,6 +97,8 @@ events:
       - "make"
       - "smake"
     candidate_directories:
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/home/eymen/fvm/versions/stable/bin/"
       - "/home/eymen/.opencode/bin/"
       - "/usr/lib/ccache/bin/"
@@ -103,6 +113,8 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
     searched_directories:
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/gmake"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/gmake"
       - "/home/eymen/fvm/versions/stable/bin/gmake"
       - "/home/eymen/.opencode/bin/gmake"
       - "/usr/lib/ccache/bin/gmake"
@@ -116,6 +128,8 @@ events:
       - "/usr/bin/site_perl/gmake"
       - "/usr/bin/vendor_perl/gmake"
       - "/usr/bin/core_perl/gmake"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/make"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/make"
       - "/home/eymen/fvm/versions/stable/bin/make"
       - "/home/eymen/.opencode/bin/make"
       - "/usr/lib/ccache/bin/make"
@@ -126,11 +140,15 @@ events:
     found: "/usr/bin/make"
     search_context:
       ENV{PATH}:
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/home/eymen/fvm/versions/stable/bin"
         - "/home/eymen/.opencode/bin"
         - "/usr/lib/ccache/bin/"
         - "/home/eymen/.cargo/bin/"
         - "/home/eymen/.local/bin/"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -147,7 +165,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeDetermineCompiler.cmake:73 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:69 (_cmake_find_compiler)"
-      - "CMakeLists.txt:3 (project)"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_CXX_COMPILER"
     description: "CXX compiler"
@@ -171,6 +189,8 @@ events:
       - "icx"
       - "clang++"
     candidate_directories:
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/home/eymen/fvm/versions/stable/bin/"
       - "/home/eymen/.opencode/bin/"
       - "/usr/lib/ccache/bin/"
@@ -185,16 +205,22 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
     searched_directories:
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/c++"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/c++"
       - "/home/eymen/fvm/versions/stable/bin/c++"
       - "/home/eymen/.opencode/bin/c++"
     found: "/usr/lib/ccache/bin/c++"
     search_context:
       ENV{PATH}:
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/home/eymen/fvm/versions/stable/bin"
         - "/home/eymen/.opencode/bin"
         - "/usr/lib/ccache/bin/"
         - "/home/eymen/.cargo/bin/"
         - "/home/eymen/.local/bin/"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -214,7 +240,7 @@ events:
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:3 (project)"
+      - "CMakeLists.txt:4 (project)"
     mode: "file"
     variable: "src_in"
     description: "Path to a file."
@@ -233,11 +259,15 @@ events:
     found: "/usr/share/cmake/Modules/CMakeCXXCompilerId.cpp.in"
     search_context:
       ENV{PATH}:
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/home/eymen/fvm/versions/stable/bin"
         - "/home/eymen/.opencode/bin"
         - "/usr/lib/ccache/bin/"
         - "/home/eymen/.cargo/bin/"
         - "/home/eymen/.local/bin/"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -255,7 +285,7 @@ events:
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:3 (project)"
+      - "CMakeLists.txt:4 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
       Compiler: /usr/lib/ccache/bin/c++ 
@@ -276,7 +306,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
-      - "CMakeLists.txt:3 (project)"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_AR"
     description: "Path to a program."
@@ -292,6 +322,8 @@ events:
       - "ar"
     candidate_directories:
       - "/usr/lib/ccache/bin/"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/home/eymen/fvm/versions/stable/bin/"
       - "/home/eymen/.opencode/bin/"
       - "/home/eymen/.cargo/bin/"
@@ -306,6 +338,8 @@ events:
       - "/usr/bin/core_perl/"
     searched_directories:
       - "/usr/lib/ccache/bin/ar"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/ar"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/ar"
       - "/home/eymen/fvm/versions/stable/bin/ar"
       - "/home/eymen/.opencode/bin/ar"
       - "/home/eymen/.cargo/bin/ar"
@@ -315,11 +349,15 @@ events:
     found: "/usr/bin/ar"
     search_context:
       ENV{PATH}:
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/home/eymen/fvm/versions/stable/bin"
         - "/home/eymen/.opencode/bin"
         - "/usr/lib/ccache/bin/"
         - "/home/eymen/.cargo/bin/"
         - "/home/eymen/.local/bin/"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -336,7 +374,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
-      - "CMakeLists.txt:3 (project)"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_RANLIB"
     description: "Path to a program."
@@ -352,6 +390,8 @@ events:
       - "ranlib"
     candidate_directories:
       - "/usr/lib/ccache/bin/"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/home/eymen/fvm/versions/stable/bin/"
       - "/home/eymen/.opencode/bin/"
       - "/home/eymen/.cargo/bin/"
@@ -366,6 +406,8 @@ events:
       - "/usr/bin/core_perl/"
     searched_directories:
       - "/usr/lib/ccache/bin/ranlib"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/ranlib"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/ranlib"
       - "/home/eymen/fvm/versions/stable/bin/ranlib"
       - "/home/eymen/.opencode/bin/ranlib"
       - "/home/eymen/.cargo/bin/ranlib"
@@ -375,11 +417,15 @@ events:
     found: "/usr/bin/ranlib"
     search_context:
       ENV{PATH}:
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/home/eymen/fvm/versions/stable/bin"
         - "/home/eymen/.opencode/bin"
         - "/usr/lib/ccache/bin/"
         - "/home/eymen/.cargo/bin/"
         - "/home/eymen/.local/bin/"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -396,7 +442,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
-      - "CMakeLists.txt:3 (project)"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_STRIP"
     description: "Path to a program."
@@ -412,6 +458,8 @@ events:
       - "strip"
     candidate_directories:
       - "/usr/lib/ccache/bin/"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/home/eymen/fvm/versions/stable/bin/"
       - "/home/eymen/.opencode/bin/"
       - "/home/eymen/.cargo/bin/"
@@ -426,6 +474,8 @@ events:
       - "/usr/bin/core_perl/"
     searched_directories:
       - "/usr/lib/ccache/bin/strip"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/strip"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/strip"
       - "/home/eymen/fvm/versions/stable/bin/strip"
       - "/home/eymen/.opencode/bin/strip"
       - "/home/eymen/.cargo/bin/strip"
@@ -435,11 +485,15 @@ events:
     found: "/usr/bin/strip"
     search_context:
       ENV{PATH}:
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/home/eymen/fvm/versions/stable/bin"
         - "/home/eymen/.opencode/bin"
         - "/usr/lib/ccache/bin/"
         - "/home/eymen/.cargo/bin/"
         - "/home/eymen/.local/bin/"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -456,7 +510,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
-      - "CMakeLists.txt:3 (project)"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_LINKER"
     description: "Path to a program."
@@ -472,6 +526,8 @@ events:
       - "ld"
     candidate_directories:
       - "/usr/lib/ccache/bin/"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/home/eymen/fvm/versions/stable/bin/"
       - "/home/eymen/.opencode/bin/"
       - "/home/eymen/.cargo/bin/"
@@ -486,6 +542,8 @@ events:
       - "/usr/bin/core_perl/"
     searched_directories:
       - "/usr/lib/ccache/bin/ld"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/ld"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/ld"
       - "/home/eymen/fvm/versions/stable/bin/ld"
       - "/home/eymen/.opencode/bin/ld"
       - "/home/eymen/.cargo/bin/ld"
@@ -495,11 +553,15 @@ events:
     found: "/usr/bin/ld"
     search_context:
       ENV{PATH}:
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/home/eymen/fvm/versions/stable/bin"
         - "/home/eymen/.opencode/bin"
         - "/usr/lib/ccache/bin/"
         - "/home/eymen/.cargo/bin/"
         - "/home/eymen/.local/bin/"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -516,7 +578,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
-      - "CMakeLists.txt:3 (project)"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_NM"
     description: "Path to a program."
@@ -532,6 +594,8 @@ events:
       - "nm"
     candidate_directories:
       - "/usr/lib/ccache/bin/"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/home/eymen/fvm/versions/stable/bin/"
       - "/home/eymen/.opencode/bin/"
       - "/home/eymen/.cargo/bin/"
@@ -546,6 +610,8 @@ events:
       - "/usr/bin/core_perl/"
     searched_directories:
       - "/usr/lib/ccache/bin/nm"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/nm"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/nm"
       - "/home/eymen/fvm/versions/stable/bin/nm"
       - "/home/eymen/.opencode/bin/nm"
       - "/home/eymen/.cargo/bin/nm"
@@ -555,11 +621,15 @@ events:
     found: "/usr/bin/nm"
     search_context:
       ENV{PATH}:
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/home/eymen/fvm/versions/stable/bin"
         - "/home/eymen/.opencode/bin"
         - "/usr/lib/ccache/bin/"
         - "/home/eymen/.cargo/bin/"
         - "/home/eymen/.local/bin/"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -576,7 +646,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
-      - "CMakeLists.txt:3 (project)"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_OBJDUMP"
     description: "Path to a program."
@@ -592,6 +662,8 @@ events:
       - "objdump"
     candidate_directories:
       - "/usr/lib/ccache/bin/"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/home/eymen/fvm/versions/stable/bin/"
       - "/home/eymen/.opencode/bin/"
       - "/home/eymen/.cargo/bin/"
@@ -606,6 +678,8 @@ events:
       - "/usr/bin/core_perl/"
     searched_directories:
       - "/usr/lib/ccache/bin/objdump"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/objdump"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/objdump"
       - "/home/eymen/fvm/versions/stable/bin/objdump"
       - "/home/eymen/.opencode/bin/objdump"
       - "/home/eymen/.cargo/bin/objdump"
@@ -615,11 +689,15 @@ events:
     found: "/usr/bin/objdump"
     search_context:
       ENV{PATH}:
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/home/eymen/fvm/versions/stable/bin"
         - "/home/eymen/.opencode/bin"
         - "/usr/lib/ccache/bin/"
         - "/home/eymen/.cargo/bin/"
         - "/home/eymen/.local/bin/"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -636,7 +714,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
-      - "CMakeLists.txt:3 (project)"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_OBJCOPY"
     description: "Path to a program."
@@ -652,6 +730,8 @@ events:
       - "objcopy"
     candidate_directories:
       - "/usr/lib/ccache/bin/"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/home/eymen/fvm/versions/stable/bin/"
       - "/home/eymen/.opencode/bin/"
       - "/home/eymen/.cargo/bin/"
@@ -666,6 +746,8 @@ events:
       - "/usr/bin/core_perl/"
     searched_directories:
       - "/usr/lib/ccache/bin/objcopy"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/objcopy"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/objcopy"
       - "/home/eymen/fvm/versions/stable/bin/objcopy"
       - "/home/eymen/.opencode/bin/objcopy"
       - "/home/eymen/.cargo/bin/objcopy"
@@ -675,11 +757,15 @@ events:
     found: "/usr/bin/objcopy"
     search_context:
       ENV{PATH}:
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/home/eymen/fvm/versions/stable/bin"
         - "/home/eymen/.opencode/bin"
         - "/usr/lib/ccache/bin/"
         - "/home/eymen/.cargo/bin/"
         - "/home/eymen/.local/bin/"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -696,7 +782,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
-      - "CMakeLists.txt:3 (project)"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_READELF"
     description: "Path to a program."
@@ -712,6 +798,8 @@ events:
       - "readelf"
     candidate_directories:
       - "/usr/lib/ccache/bin/"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/home/eymen/fvm/versions/stable/bin/"
       - "/home/eymen/.opencode/bin/"
       - "/home/eymen/.cargo/bin/"
@@ -726,6 +814,8 @@ events:
       - "/usr/bin/core_perl/"
     searched_directories:
       - "/usr/lib/ccache/bin/readelf"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/readelf"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/readelf"
       - "/home/eymen/fvm/versions/stable/bin/readelf"
       - "/home/eymen/.opencode/bin/readelf"
       - "/home/eymen/.cargo/bin/readelf"
@@ -735,11 +825,15 @@ events:
     found: "/usr/bin/readelf"
     search_context:
       ENV{PATH}:
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/home/eymen/fvm/versions/stable/bin"
         - "/home/eymen/.opencode/bin"
         - "/usr/lib/ccache/bin/"
         - "/home/eymen/.cargo/bin/"
         - "/home/eymen/.local/bin/"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -756,7 +850,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
-      - "CMakeLists.txt:3 (project)"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_DLLTOOL"
     description: "Path to a program."
@@ -772,6 +866,8 @@ events:
       - "dlltool"
     candidate_directories:
       - "/usr/lib/ccache/bin/"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/home/eymen/fvm/versions/stable/bin/"
       - "/home/eymen/.opencode/bin/"
       - "/home/eymen/.cargo/bin/"
@@ -786,6 +882,8 @@ events:
       - "/usr/bin/core_perl/"
     searched_directories:
       - "/usr/lib/ccache/bin/dlltool"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/dlltool"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/dlltool"
       - "/home/eymen/fvm/versions/stable/bin/dlltool"
       - "/home/eymen/.opencode/bin/dlltool"
       - "/home/eymen/.cargo/bin/dlltool"
@@ -801,11 +899,15 @@ events:
     found: false
     search_context:
       ENV{PATH}:
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/home/eymen/fvm/versions/stable/bin"
         - "/home/eymen/.opencode/bin"
         - "/usr/lib/ccache/bin/"
         - "/home/eymen/.cargo/bin/"
         - "/home/eymen/.local/bin/"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -822,7 +924,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
-      - "CMakeLists.txt:3 (project)"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_ADDR2LINE"
     description: "Path to a program."
@@ -838,6 +940,8 @@ events:
       - "addr2line"
     candidate_directories:
       - "/usr/lib/ccache/bin/"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/home/eymen/fvm/versions/stable/bin/"
       - "/home/eymen/.opencode/bin/"
       - "/home/eymen/.cargo/bin/"
@@ -852,6 +956,8 @@ events:
       - "/usr/bin/core_perl/"
     searched_directories:
       - "/usr/lib/ccache/bin/addr2line"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/addr2line"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/addr2line"
       - "/home/eymen/fvm/versions/stable/bin/addr2line"
       - "/home/eymen/.opencode/bin/addr2line"
       - "/home/eymen/.cargo/bin/addr2line"
@@ -861,11 +967,15 @@ events:
     found: "/usr/bin/addr2line"
     search_context:
       ENV{PATH}:
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/home/eymen/fvm/versions/stable/bin"
         - "/home/eymen/.opencode/bin"
         - "/usr/lib/ccache/bin/"
         - "/home/eymen/.cargo/bin/"
         - "/home/eymen/.local/bin/"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -882,7 +992,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
-      - "CMakeLists.txt:3 (project)"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_TAPI"
     description: "Path to a program."
@@ -898,6 +1008,8 @@ events:
       - "tapi"
     candidate_directories:
       - "/usr/lib/ccache/bin/"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/home/eymen/fvm/versions/stable/bin/"
       - "/home/eymen/.opencode/bin/"
       - "/home/eymen/.cargo/bin/"
@@ -912,6 +1024,8 @@ events:
       - "/usr/bin/core_perl/"
     searched_directories:
       - "/usr/lib/ccache/bin/tapi"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/tapi"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/tapi"
       - "/home/eymen/fvm/versions/stable/bin/tapi"
       - "/home/eymen/.opencode/bin/tapi"
       - "/home/eymen/.cargo/bin/tapi"
@@ -927,11 +1041,15 @@ events:
     found: false
     search_context:
       ENV{PATH}:
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/home/eymen/fvm/versions/stable/bin"
         - "/home/eymen/.opencode/bin"
         - "/usr/lib/ccache/bin/"
         - "/home/eymen/.cargo/bin/"
         - "/home/eymen/.local/bin/"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -948,7 +1066,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
-      - "CMakeLists.txt:3 (project)"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_CXX_COMPILER_AR"
     description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
@@ -967,6 +1085,8 @@ events:
       - "gcc-ar"
     candidate_directories:
       - "/usr/lib/ccache/bin/"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/home/eymen/fvm/versions/stable/bin/"
       - "/home/eymen/.opencode/bin/"
       - "/home/eymen/.cargo/bin/"
@@ -981,6 +1101,8 @@ events:
       - "/usr/bin/core_perl/"
     searched_directories:
       - "/usr/lib/ccache/bin/gcc-ar-16.1"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-16.1"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-16.1"
       - "/home/eymen/fvm/versions/stable/bin/gcc-ar-16.1"
       - "/home/eymen/.opencode/bin/gcc-ar-16.1"
       - "/home/eymen/.cargo/bin/gcc-ar-16.1"
@@ -994,6 +1116,8 @@ events:
       - "/usr/bin/vendor_perl/gcc-ar-16.1"
       - "/usr/bin/core_perl/gcc-ar-16.1"
       - "/usr/lib/ccache/bin/gcc-ar-16"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-16"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-16"
       - "/home/eymen/fvm/versions/stable/bin/gcc-ar-16"
       - "/home/eymen/.opencode/bin/gcc-ar-16"
       - "/home/eymen/.cargo/bin/gcc-ar-16"
@@ -1007,6 +1131,8 @@ events:
       - "/usr/bin/vendor_perl/gcc-ar-16"
       - "/usr/bin/core_perl/gcc-ar-16"
       - "/usr/lib/ccache/bin/gcc-ar16"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar16"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar16"
       - "/home/eymen/fvm/versions/stable/bin/gcc-ar16"
       - "/home/eymen/.opencode/bin/gcc-ar16"
       - "/home/eymen/.cargo/bin/gcc-ar16"
@@ -1020,6 +1146,8 @@ events:
       - "/usr/bin/vendor_perl/gcc-ar16"
       - "/usr/bin/core_perl/gcc-ar16"
       - "/usr/lib/ccache/bin/gcc-ar"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar"
       - "/home/eymen/fvm/versions/stable/bin/gcc-ar"
       - "/home/eymen/.opencode/bin/gcc-ar"
       - "/home/eymen/.cargo/bin/gcc-ar"
@@ -1029,11 +1157,15 @@ events:
     found: "/usr/bin/gcc-ar"
     search_context:
       ENV{PATH}:
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/home/eymen/fvm/versions/stable/bin"
         - "/home/eymen/.opencode/bin"
         - "/usr/lib/ccache/bin/"
         - "/home/eymen/.cargo/bin/"
         - "/home/eymen/.local/bin/"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -1050,7 +1182,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
-      - "CMakeLists.txt:3 (project)"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_CXX_COMPILER_RANLIB"
     description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
@@ -1069,6 +1201,8 @@ events:
       - "gcc-ranlib"
     candidate_directories:
       - "/usr/lib/ccache/bin/"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/home/eymen/fvm/versions/stable/bin/"
       - "/home/eymen/.opencode/bin/"
       - "/home/eymen/.cargo/bin/"
@@ -1083,6 +1217,8 @@ events:
       - "/usr/bin/core_perl/"
     searched_directories:
       - "/usr/lib/ccache/bin/gcc-ranlib-16.1"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-16.1"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-16.1"
       - "/home/eymen/fvm/versions/stable/bin/gcc-ranlib-16.1"
       - "/home/eymen/.opencode/bin/gcc-ranlib-16.1"
       - "/home/eymen/.cargo/bin/gcc-ranlib-16.1"
@@ -1096,6 +1232,8 @@ events:
       - "/usr/bin/vendor_perl/gcc-ranlib-16.1"
       - "/usr/bin/core_perl/gcc-ranlib-16.1"
       - "/usr/lib/ccache/bin/gcc-ranlib-16"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-16"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-16"
       - "/home/eymen/fvm/versions/stable/bin/gcc-ranlib-16"
       - "/home/eymen/.opencode/bin/gcc-ranlib-16"
       - "/home/eymen/.cargo/bin/gcc-ranlib-16"
@@ -1109,6 +1247,8 @@ events:
       - "/usr/bin/vendor_perl/gcc-ranlib-16"
       - "/usr/bin/core_perl/gcc-ranlib-16"
       - "/usr/lib/ccache/bin/gcc-ranlib16"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib16"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib16"
       - "/home/eymen/fvm/versions/stable/bin/gcc-ranlib16"
       - "/home/eymen/.opencode/bin/gcc-ranlib16"
       - "/home/eymen/.cargo/bin/gcc-ranlib16"
@@ -1122,6 +1262,8 @@ events:
       - "/usr/bin/vendor_perl/gcc-ranlib16"
       - "/usr/bin/core_perl/gcc-ranlib16"
       - "/usr/lib/ccache/bin/gcc-ranlib"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib"
       - "/home/eymen/fvm/versions/stable/bin/gcc-ranlib"
       - "/home/eymen/.opencode/bin/gcc-ranlib"
       - "/home/eymen/.cargo/bin/gcc-ranlib"
@@ -1131,11 +1273,366 @@ events:
     found: "/usr/bin/gcc-ranlib"
     search_context:
       ENV{PATH}:
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/home/eymen/fvm/versions/stable/bin"
         - "/home/eymen/.opencode/bin"
         - "/usr/lib/ccache/bin/"
         - "/home/eymen/.cargo/bin/"
         - "/home/eymen/.local/bin/"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/eymen/.local/bin"
+        - "/home/eymen/.local/bin"
+        - "/home/eymen/.local/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompiler.cmake:54 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:64 (_cmake_find_compiler)"
+      - "CMakeLists.txt:4 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER"
+    description: "C compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cc"
+      - "gcc"
+      - "cl"
+      - "bcc"
+      - "xlc"
+      - "icx"
+      - "clang"
+    candidate_directories:
+      - "/usr/lib/ccache/bin/"
+    found: "/usr/lib/ccache/bin/cc"
+    search_context:
+      ENV{PATH}:
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/eymen/fvm/versions/stable/bin"
+        - "/home/eymen/.opencode/bin"
+        - "/usr/lib/ccache/bin/"
+        - "/home/eymen/.cargo/bin/"
+        - "/home/eymen/.local/bin/"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/eymen/.local/bin"
+        - "/home/eymen/.local/bin"
+        - "/home/eymen/.local/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:468 (find_file)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:506 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:4 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "/usr/share/cmake/Modules/"
+    found: "/usr/share/cmake/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      ENV{PATH}:
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/eymen/fvm/versions/stable/bin"
+        - "/home/eymen/.opencode/bin"
+        - "/usr/lib/ccache/bin/"
+        - "/home/eymen/.cargo/bin/"
+        - "/home/eymen/.local/bin/"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/eymen/.local/bin"
+        - "/home/eymen/.local/bin"
+        - "/home/eymen/.local/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/lib/ccache/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/eymen/Belgeler/vscode/game of death/build/CMakeFiles/4.3.4/CompilerIdC/a.out
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "CMakeLists.txt:4 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER_AR"
+    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc-ar-16.1"
+      - "gcc-ar-16"
+      - "gcc-ar16"
+      - "gcc-ar"
+    candidate_directories:
+      - "/usr/lib/ccache/bin/"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/home/eymen/fvm/versions/stable/bin/"
+      - "/home/eymen/.opencode/bin/"
+      - "/home/eymen/.cargo/bin/"
+      - "/home/eymen/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/usr/lib/ccache/bin/gcc-ar-16.1"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-16.1"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-16.1"
+      - "/home/eymen/fvm/versions/stable/bin/gcc-ar-16.1"
+      - "/home/eymen/.opencode/bin/gcc-ar-16.1"
+      - "/home/eymen/.cargo/bin/gcc-ar-16.1"
+      - "/home/eymen/.local/bin/gcc-ar-16.1"
+      - "/usr/local/sbin/gcc-ar-16.1"
+      - "/usr/local/bin/gcc-ar-16.1"
+      - "/usr/bin/gcc-ar-16.1"
+      - "/var/lib/flatpak/exports/bin/gcc-ar-16.1"
+      - "/usr/lib/jvm/default/bin/gcc-ar-16.1"
+      - "/usr/bin/site_perl/gcc-ar-16.1"
+      - "/usr/bin/vendor_perl/gcc-ar-16.1"
+      - "/usr/bin/core_perl/gcc-ar-16.1"
+      - "/usr/lib/ccache/bin/gcc-ar-16"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-16"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-16"
+      - "/home/eymen/fvm/versions/stable/bin/gcc-ar-16"
+      - "/home/eymen/.opencode/bin/gcc-ar-16"
+      - "/home/eymen/.cargo/bin/gcc-ar-16"
+      - "/home/eymen/.local/bin/gcc-ar-16"
+      - "/usr/local/sbin/gcc-ar-16"
+      - "/usr/local/bin/gcc-ar-16"
+      - "/usr/bin/gcc-ar-16"
+      - "/var/lib/flatpak/exports/bin/gcc-ar-16"
+      - "/usr/lib/jvm/default/bin/gcc-ar-16"
+      - "/usr/bin/site_perl/gcc-ar-16"
+      - "/usr/bin/vendor_perl/gcc-ar-16"
+      - "/usr/bin/core_perl/gcc-ar-16"
+      - "/usr/lib/ccache/bin/gcc-ar16"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar16"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar16"
+      - "/home/eymen/fvm/versions/stable/bin/gcc-ar16"
+      - "/home/eymen/.opencode/bin/gcc-ar16"
+      - "/home/eymen/.cargo/bin/gcc-ar16"
+      - "/home/eymen/.local/bin/gcc-ar16"
+      - "/usr/local/sbin/gcc-ar16"
+      - "/usr/local/bin/gcc-ar16"
+      - "/usr/bin/gcc-ar16"
+      - "/var/lib/flatpak/exports/bin/gcc-ar16"
+      - "/usr/lib/jvm/default/bin/gcc-ar16"
+      - "/usr/bin/site_perl/gcc-ar16"
+      - "/usr/bin/vendor_perl/gcc-ar16"
+      - "/usr/bin/core_perl/gcc-ar16"
+      - "/usr/lib/ccache/bin/gcc-ar"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar"
+      - "/home/eymen/fvm/versions/stable/bin/gcc-ar"
+      - "/home/eymen/.opencode/bin/gcc-ar"
+      - "/home/eymen/.cargo/bin/gcc-ar"
+      - "/home/eymen/.local/bin/gcc-ar"
+      - "/usr/local/sbin/gcc-ar"
+      - "/usr/local/bin/gcc-ar"
+    found: "/usr/bin/gcc-ar"
+    search_context:
+      ENV{PATH}:
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/eymen/fvm/versions/stable/bin"
+        - "/home/eymen/.opencode/bin"
+        - "/usr/lib/ccache/bin/"
+        - "/home/eymen/.cargo/bin/"
+        - "/home/eymen/.local/bin/"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/eymen/.local/bin"
+        - "/home/eymen/.local/bin"
+        - "/home/eymen/.local/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "CMakeLists.txt:4 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER_RANLIB"
+    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc-ranlib-16.1"
+      - "gcc-ranlib-16"
+      - "gcc-ranlib16"
+      - "gcc-ranlib"
+    candidate_directories:
+      - "/usr/lib/ccache/bin/"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/home/eymen/fvm/versions/stable/bin/"
+      - "/home/eymen/.opencode/bin/"
+      - "/home/eymen/.cargo/bin/"
+      - "/home/eymen/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/usr/lib/ccache/bin/gcc-ranlib-16.1"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-16.1"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-16.1"
+      - "/home/eymen/fvm/versions/stable/bin/gcc-ranlib-16.1"
+      - "/home/eymen/.opencode/bin/gcc-ranlib-16.1"
+      - "/home/eymen/.cargo/bin/gcc-ranlib-16.1"
+      - "/home/eymen/.local/bin/gcc-ranlib-16.1"
+      - "/usr/local/sbin/gcc-ranlib-16.1"
+      - "/usr/local/bin/gcc-ranlib-16.1"
+      - "/usr/bin/gcc-ranlib-16.1"
+      - "/var/lib/flatpak/exports/bin/gcc-ranlib-16.1"
+      - "/usr/lib/jvm/default/bin/gcc-ranlib-16.1"
+      - "/usr/bin/site_perl/gcc-ranlib-16.1"
+      - "/usr/bin/vendor_perl/gcc-ranlib-16.1"
+      - "/usr/bin/core_perl/gcc-ranlib-16.1"
+      - "/usr/lib/ccache/bin/gcc-ranlib-16"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-16"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-16"
+      - "/home/eymen/fvm/versions/stable/bin/gcc-ranlib-16"
+      - "/home/eymen/.opencode/bin/gcc-ranlib-16"
+      - "/home/eymen/.cargo/bin/gcc-ranlib-16"
+      - "/home/eymen/.local/bin/gcc-ranlib-16"
+      - "/usr/local/sbin/gcc-ranlib-16"
+      - "/usr/local/bin/gcc-ranlib-16"
+      - "/usr/bin/gcc-ranlib-16"
+      - "/var/lib/flatpak/exports/bin/gcc-ranlib-16"
+      - "/usr/lib/jvm/default/bin/gcc-ranlib-16"
+      - "/usr/bin/site_perl/gcc-ranlib-16"
+      - "/usr/bin/vendor_perl/gcc-ranlib-16"
+      - "/usr/bin/core_perl/gcc-ranlib-16"
+      - "/usr/lib/ccache/bin/gcc-ranlib16"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib16"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib16"
+      - "/home/eymen/fvm/versions/stable/bin/gcc-ranlib16"
+      - "/home/eymen/.opencode/bin/gcc-ranlib16"
+      - "/home/eymen/.cargo/bin/gcc-ranlib16"
+      - "/home/eymen/.local/bin/gcc-ranlib16"
+      - "/usr/local/sbin/gcc-ranlib16"
+      - "/usr/local/bin/gcc-ranlib16"
+      - "/usr/bin/gcc-ranlib16"
+      - "/var/lib/flatpak/exports/bin/gcc-ranlib16"
+      - "/usr/lib/jvm/default/bin/gcc-ranlib16"
+      - "/usr/bin/site_perl/gcc-ranlib16"
+      - "/usr/bin/vendor_perl/gcc-ranlib16"
+      - "/usr/bin/core_perl/gcc-ranlib16"
+      - "/usr/lib/ccache/bin/gcc-ranlib"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib"
+      - "/home/eymen/fvm/versions/stable/bin/gcc-ranlib"
+      - "/home/eymen/.opencode/bin/gcc-ranlib"
+      - "/home/eymen/.cargo/bin/gcc-ranlib"
+      - "/home/eymen/.local/bin/gcc-ranlib"
+      - "/usr/local/sbin/gcc-ranlib"
+      - "/usr/local/bin/gcc-ranlib"
+    found: "/usr/bin/gcc-ranlib"
+    search_context:
+      ENV{PATH}:
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/eymen/fvm/versions/stable/bin"
+        - "/home/eymen/.opencode/bin"
+        - "/usr/lib/ccache/bin/"
+        - "/home/eymen/.cargo/bin/"
+        - "/home/eymen/.local/bin/"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -1152,12 +1649,12 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
       - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:3 (project)"
+      - "CMakeLists.txt:4 (project)"
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/eymen/Belgeler/vscode/game of death/build/CMakeFiles/CMakeScratch/TryCompile-lG5841"
-      binary: "/home/eymen/Belgeler/vscode/game of death/build/CMakeFiles/CMakeScratch/TryCompile-lG5841"
+      source: "/home/eymen/Belgeler/vscode/game of death/build/CMakeFiles/CMakeScratch/TryCompile-RNnJfi"
+      binary: "/home/eymen/Belgeler/vscode/game of death/build/CMakeFiles/CMakeScratch/TryCompile-RNnJfi"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1168,13 +1665,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/eymen/Belgeler/vscode/game of death/build/CMakeFiles/CMakeScratch/TryCompile-lG5841'
+        Change Dir: '/home/eymen/Belgeler/vscode/game of death/build/CMakeFiles/CMakeScratch/TryCompile-RNnJfi'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_16acc/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_16acc.dir/build.make CMakeFiles/cmTC_16acc.dir/build
-        make[1]: Entering directory '/home/eymen/Belgeler/vscode/game of death/build/CMakeFiles/CMakeScratch/TryCompile-lG5841'
-        Building CXX object CMakeFiles/cmTC_16acc.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/lib/ccache/bin/c++   -v -o CMakeFiles/cmTC_16acc.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_bf50a/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_bf50a.dir/build.make CMakeFiles/cmTC_bf50a.dir/build
+        make[1]: Entering directory '/home/eymen/Belgeler/vscode/game of death/build/CMakeFiles/CMakeScratch/TryCompile-RNnJfi'
+        Building CXX object CMakeFiles/cmTC_bf50a.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/lib/ccache/bin/c++   -v -o CMakeFiles/cmTC_bf50a.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         Target: x86_64-pc-linux-gnu
@@ -1206,8 +1703,8 @@ events:
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../:/lib/:/usr/lib/
         COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-c' '-o' 'CMakeFiles/cmTC_c382e.dir/CMakeCXXCompilerABI.cpp.o' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c382e.dir/CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_16acc
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_16acc.dir/link.txt --verbose=1
+        Linking CXX executable cmTC_bf50a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bf50a.dir/link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/lto-wrapper
@@ -1218,14 +1715,14 @@ events:
         gcc version 16.1.1 20260430 (GCC) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_16acc' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_16acc.'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccUTILoo.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_16acc /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_16acc.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_bf50a' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_bf50a.'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccm1ZDtk.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_bf50a /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_bf50a.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crtn.o
         collect2 version 16.1.1 20260430
-        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccUTILoo.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_16acc /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_16acc.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crtn.o
+        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccm1ZDtk.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_bf50a /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_bf50a.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crtn.o
         GNU ld (GNU Binutils) 2.46.0
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_16acc' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_16acc.'
-        /usr/lib/ccache/bin/c++  -v -Wl,-v CMakeFiles/cmTC_16acc.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_16acc
-        make[1]: Leaving directory '/home/eymen/Belgeler/vscode/game of death/build/CMakeFiles/CMakeScratch/TryCompile-lG5841'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_bf50a' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_bf50a.'
+        /usr/lib/ccache/bin/c++  -v -Wl,-v CMakeFiles/cmTC_bf50a.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_bf50a
+        make[1]: Leaving directory '/home/eymen/Belgeler/vscode/game of death/build/CMakeFiles/CMakeScratch/TryCompile-RNnJfi'
         
       exitCode: 0
   -
@@ -1233,7 +1730,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
       - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:3 (project)"
+      - "CMakeLists.txt:4 (project)"
     message: |
       Parsed CXX implicit include dir info: rv=done
         found start of include info
@@ -1259,18 +1756,18 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
       - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:3 (project)"
+      - "CMakeLists.txt:4 (project)"
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/home/eymen/Belgeler/vscode/game of death/build/CMakeFiles/CMakeScratch/TryCompile-lG5841']
+        ignore line: [Change Dir: '/home/eymen/Belgeler/vscode/game of death/build/CMakeFiles/CMakeScratch/TryCompile-RNnJfi']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_16acc/fast]
-        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_16acc.dir/build.make CMakeFiles/cmTC_16acc.dir/build]
-        ignore line: [make[1]: Entering directory '/home/eymen/Belgeler/vscode/game of death/build/CMakeFiles/CMakeScratch/TryCompile-lG5841']
-        ignore line: [Building CXX object CMakeFiles/cmTC_16acc.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/lib/ccache/bin/c++   -v -o CMakeFiles/cmTC_16acc.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_bf50a/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_bf50a.dir/build.make CMakeFiles/cmTC_bf50a.dir/build]
+        ignore line: [make[1]: Entering directory '/home/eymen/Belgeler/vscode/game of death/build/CMakeFiles/CMakeScratch/TryCompile-RNnJfi']
+        ignore line: [Building CXX object CMakeFiles/cmTC_bf50a.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/lib/ccache/bin/c++   -v -o CMakeFiles/cmTC_bf50a.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [Target: x86_64-pc-linux-gnu]
@@ -1302,8 +1799,8 @@ events:
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../:/lib/:/usr/lib/]
         ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-c' '-o' 'CMakeFiles/cmTC_c382e.dir/CMakeCXXCompilerABI.cpp.o' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c382e.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_16acc]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_16acc.dir/link.txt --verbose=1]
+        ignore line: [Linking CXX executable cmTC_bf50a]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bf50a.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/lto-wrapper]
@@ -1314,13 +1811,13 @@ events:
         ignore line: [gcc version 16.1.1 20260430 (GCC) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_16acc' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_16acc.']
-        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccUTILoo.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_16acc /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_16acc.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_bf50a' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_bf50a.']
+        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccm1ZDtk.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_bf50a /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_bf50a.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crtn.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccUTILoo.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccm1ZDtk.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-latomic_asneeded] ==> ignore
@@ -1336,7 +1833,7 @@ events:
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-pie] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_16acc] ==> ignore
+          arg [cmTC_bf50a] ==> ignore
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crti.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtbeginS.o]
@@ -1348,7 +1845,7 @@ events:
           arg [-L/lib] ==> dir [/lib]
           arg [-L/usr/lib] ==> dir [/usr/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_16acc.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_bf50a.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -1360,7 +1857,7 @@ events:
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtendS.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crtn.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crtn.o]
         ignore line: [collect2 version 16.1.1 20260430]
-        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccUTILoo.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_16acc /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_16acc.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crtn.o]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccm1ZDtk.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_bf50a /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_bf50a.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crtn.o]
         linker tool for 'CXX': /usr/bin/ld
         collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/Scrt1.o] ==> [/usr/lib/Scrt1.o]
         collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crti.o] ==> [/usr/lib/crti.o]
@@ -1384,16 +1881,242 @@ events:
       - "/usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
       - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:3 (project)"
+      - "CMakeLists.txt:4 (project)"
     message: |
       Running the CXX compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils) 2.46.0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/eymen/Belgeler/vscode/game of death/build/CMakeFiles/CMakeScratch/TryCompile-AbgXc6"
+      binary: "/home/eymen/Belgeler/vscode/game of death/build/CMakeFiles/CMakeScratch/TryCompile-AbgXc6"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/eymen/Belgeler/vscode/game of death/build/CMakeFiles/CMakeScratch/TryCompile-AbgXc6'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f4485/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_f4485.dir/build.make CMakeFiles/cmTC_f4485.dir/build
+        make[1]: Entering directory '/home/eymen/Belgeler/vscode/game of death/build/CMakeFiles/CMakeScratch/TryCompile-AbgXc6'
+        Building C object CMakeFiles/cmTC_f4485.dir/CMakeCCompilerABI.c.o
+        /usr/lib/ccache/bin/cc   -v -o CMakeFiles/cmTC_f4485.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        Target: x86_64-pc-linux-gnu
+        Configured with: /tmp/pkg/src/gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,m2,objc,obj-c++,rust,cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://github.com/CachyOS/CachyOS-PKGBUILDS/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror --disable-fixincludes
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 16.1.1 20260430 (GCC) 
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-c' '-o' 'CMakeFiles/cmTC_3efb7.dir/CMakeCCompilerABI.c.o' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3efb7.dir/'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_3efb7.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -o /tmp/cc0C3Y9u.s
+        GNU C23 (GCC) version 16.1.1 20260430 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 16.1.1 20260430, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.4.1, isl version isl-0.27-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../x86_64-pc-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include
+         /usr/local/include
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 8e30ce17ad1eefe3f15199dda02dd603
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-c' '-o' 'CMakeFiles/cmTC_3efb7.dir/CMakeCCompilerABI.c.o' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3efb7.dir/'
+         as -v --64 -o CMakeFiles/cmTC_3efb7.dir/CMakeCCompilerABI.c.o /tmp/cc0C3Y9u.s
+        GNU assembler version 2.46.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.46.0
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-c' '-o' 'CMakeFiles/cmTC_3efb7.dir/CMakeCCompilerABI.c.o' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3efb7.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_f4485
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f4485.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/lto-wrapper
+        Target: x86_64-pc-linux-gnu
+        Configured with: /tmp/pkg/src/gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,m2,objc,obj-c++,rust,cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://github.com/CachyOS/CachyOS-PKGBUILDS/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror --disable-fixincludes
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 16.1.1 20260430 (GCC) 
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f4485' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f4485.'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccYJFZUi.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_f4485 /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_f4485.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crtn.o
+        collect2 version 16.1.1 20260430
+        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccYJFZUi.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_f4485 /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_f4485.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crtn.o
+        GNU ld (GNU Binutils) 2.46.0
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f4485' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f4485.'
+        /usr/lib/ccache/bin/cc  -v -Wl,-v CMakeFiles/cmTC_f4485.dir/CMakeCCompilerABI.c.o -o cmTC_f4485
+        make[1]: Leaving directory '/home/eymen/Belgeler/vscode/game of death/build/CMakeFiles/CMakeScratch/TryCompile-AbgXc6'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include]
+          add: [/usr/local/include]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include;/usr/local/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/home/eymen/Belgeler/vscode/game of death/build/CMakeFiles/CMakeScratch/TryCompile-AbgXc6']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f4485/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_f4485.dir/build.make CMakeFiles/cmTC_f4485.dir/build]
+        ignore line: [make[1]: Entering directory '/home/eymen/Belgeler/vscode/game of death/build/CMakeFiles/CMakeScratch/TryCompile-AbgXc6']
+        ignore line: [Building C object CMakeFiles/cmTC_f4485.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/lib/ccache/bin/cc   -v -o CMakeFiles/cmTC_f4485.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /tmp/pkg/src/gcc/configure --enable-languages=ada c c++ d fortran go lto m2 objc obj-c++ rust cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://github.com/CachyOS/CachyOS-PKGBUILDS/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror --disable-fixincludes]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 16.1.1 20260430 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-c' '-o' 'CMakeFiles/cmTC_3efb7.dir/CMakeCCompilerABI.c.o' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3efb7.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_3efb7.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -o /tmp/cc0C3Y9u.s]
+        ignore line: [GNU C23 (GCC) version 16.1.1 20260430 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 16.1.1 20260430  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.4.1  isl version isl-0.27-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 8e30ce17ad1eefe3f15199dda02dd603]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-c' '-o' 'CMakeFiles/cmTC_3efb7.dir/CMakeCCompilerABI.c.o' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3efb7.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_3efb7.dir/CMakeCCompilerABI.c.o /tmp/cc0C3Y9u.s]
+        ignore line: [GNU assembler version 2.46.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.46.0]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-c' '-o' 'CMakeFiles/cmTC_3efb7.dir/CMakeCCompilerABI.c.o' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3efb7.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_f4485]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f4485.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/lto-wrapper]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /tmp/pkg/src/gcc/configure --enable-languages=ada c c++ d fortran go lto m2 objc obj-c++ rust cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://github.com/CachyOS/CachyOS-PKGBUILDS/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror --disable-fixincludes]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 16.1.1 20260430 (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f4485' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f4485.']
+        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccYJFZUi.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_f4485 /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_f4485.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crtn.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccYJFZUi.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s_asneeded] ==> ignore
+          arg [-plugin-opt=-pass-through=-latomic_asneeded] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s_asneeded] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_f4485] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crti.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../..]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_f4485.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lgcc_s_asneeded] ==> lib [gcc_s_asneeded]
+          arg [-latomic_asneeded] ==> lib [atomic_asneeded]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lgcc_s_asneeded] ==> lib [gcc_s_asneeded]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crtn.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crtn.o]
+        ignore line: [collect2 version 16.1.1 20260430]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccYJFZUi.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_f4485 /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_f4485.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crtn.o]
+        linker tool for 'C': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/Scrt1.o] ==> [/usr/lib/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crti.o] ==> [/usr/lib/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crtn.o] ==> [/usr/lib/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../..] ==> [/usr/lib]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s_asneeded;atomic_asneeded;c;gcc;gcc_s_asneeded]
+        implicit objs: [/usr/lib/Scrt1.o;/usr/lib/crti.o;/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtbeginS.o;/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtendS.o;/usr/lib/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1;/usr/lib;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Running the C compiler's linker: "/usr/bin/ld" "-v"
       GNU ld (GNU Binutils) 2.46.0
   -
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/FindPkgConfig.cmake:517 (find_program)"
       - "/usr/lib/cmake/SDL3/SDL3Config.cmake:100 (find_package)"
-      - "CMakeLists.txt:8 (find_package)"
+      - "CMakeLists.txt:11 (find_package)"
     mode: "program"
     variable: "PKG_CONFIG_EXECUTABLE"
     description: "pkg-config executable"
@@ -1409,6 +2132,8 @@ events:
       - "pkg-config"
       - "pkgconf"
     candidate_directories:
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/home/eymen/fvm/versions/stable/bin/"
       - "/home/eymen/.opencode/bin/"
       - "/usr/lib/ccache/bin/"
@@ -1440,6 +2165,10 @@ events:
       - "/opt/sbin/"
       - "/opt/"
     searched_directories:
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/pkg-config"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/pkgconf"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/pkg-config"
+      - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/pkgconf"
       - "/home/eymen/fvm/versions/stable/bin/pkg-config"
       - "/home/eymen/fvm/versions/stable/bin/pkgconf"
       - "/home/eymen/.opencode/bin/pkg-config"
@@ -1457,11 +2186,15 @@ events:
     found: "/usr/bin/pkg-config"
     search_context:
       ENV{PATH}:
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/home/eymen/fvm/versions/stable/bin"
         - "/home/eymen/.opencode/bin"
         - "/usr/lib/ccache/bin/"
         - "/home/eymen/.cargo/bin/"
         - "/home/eymen/.local/bin/"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -1491,7 +2224,7 @@ events:
       - "/usr/share/cmake/Modules/FindPkgConfig.cmake:1149 (_pkg_recalculate)"
       - "/usr/share/cmake/Modules/FindPkgConfig.cmake:1166 (_pkg_check_modules_internal)"
       - "/usr/lib/cmake/SDL3/SDL3Config.cmake:102 (pkg_check_modules)"
-      - "CMakeLists.txt:8 (find_package)"
+      - "CMakeLists.txt:11 (find_package)"
     mode: "library"
     variable: "pkgcfg_lib_PC_LIBUNWIND_unwind-generic"
     description: "Path to a library."
@@ -1510,11 +2243,15 @@ events:
     found: "/usr/lib/libunwind-generic.so"
     search_context:
       ENV{PATH}:
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/home/eymen/fvm/versions/stable/bin"
         - "/home/eymen/.opencode/bin"
         - "/usr/lib/ccache/bin/"
         - "/home/eymen/.cargo/bin/"
         - "/home/eymen/.local/bin/"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -1546,7 +2283,7 @@ events:
       - "/usr/share/cmake/Modules/FindPkgConfig.cmake:1149 (_pkg_recalculate)"
       - "/usr/share/cmake/Modules/FindPkgConfig.cmake:1166 (_pkg_check_modules_internal)"
       - "/usr/lib/cmake/SDL3/SDL3Config.cmake:102 (pkg_check_modules)"
-      - "CMakeLists.txt:8 (find_package)"
+      - "CMakeLists.txt:11 (find_package)"
     mode: "library"
     variable: "pkgcfg_lib_PC_LIBUNWIND_unwind"
     description: "Path to a library."
@@ -1565,11 +2302,15 @@ events:
     found: "/usr/lib/libunwind.so"
     search_context:
       ENV{PATH}:
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/home/eymen/fvm/versions/stable/bin"
         - "/home/eymen/.opencode/bin"
         - "/usr/lib/ccache/bin/"
         - "/home/eymen/.cargo/bin/"
         - "/home/eymen/.local/bin/"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
@@ -1596,7 +2337,7 @@ events:
   -
     kind: "find_package-v1"
     backtrace:
-      - "CMakeLists.txt:8 (find_package)"
+      - "CMakeLists.txt:11 (find_package)"
     name: "SDL3"
     configs:
       -
@@ -1656,6 +2397,54 @@ events:
         reason: "no_exist"
       -
         path: "/home/eymen/Belgeler/vscode/game of death/build/CMakeFiles/pkgRedirects/share/cps/sdl3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/SDL3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/sdl3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/lib/cps/SDL3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/lib/cps/sdl3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/share/cps/SDL3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/share/cps/sdl3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/SDL3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/sdl3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/lib/cps/SDL3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/lib/cps/sdl3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/share/cps/SDL3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/share/cps/sdl3.cps"
         mode: "cps"
         reason: "no_exist"
       -
@@ -1832,11 +2621,15 @@ events:
       version: "3.4.10"
     search_context:
       ENV{PATH}:
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/home/eymen/fvm/versions/stable/bin"
         - "/home/eymen/.opencode/bin"
         - "/usr/lib/ccache/bin/"
         - "/home/eymen/.cargo/bin/"
         - "/home/eymen/.local/bin/"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/eymen/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"

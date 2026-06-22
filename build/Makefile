@@ -129,6 +129,30 @@ program/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/build
 .PHONY : program/fast
 
+include/glad.o: include/glad.c.o
+.PHONY : include/glad.o
+
+# target to build an object file
+include/glad.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/include/glad.c.o
+.PHONY : include/glad.c.o
+
+include/glad.i: include/glad.c.i
+.PHONY : include/glad.i
+
+# target to preprocess a source file
+include/glad.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/include/glad.c.i
+.PHONY : include/glad.c.i
+
+include/glad.s: include/glad.c.s
+.PHONY : include/glad.s
+
+# target to generate assembly for a file
+include/glad.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/include/glad.c.s
+.PHONY : include/glad.c.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -162,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... program"
+	@echo "... include/glad.o"
+	@echo "... include/glad.i"
+	@echo "... include/glad.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
